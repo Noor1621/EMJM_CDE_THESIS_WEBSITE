@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Study Area &mdash; Hohe Tauern National Park
+  </title>
+  <meta content="Syeda Noor ul Saba Bukhari" name="author"/>
+  <meta content="website" property="og:type"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="@Lovable" name="twitter:site"/>
+  <meta content="Geographic setting, topography, climate, and elevation zones of Hohe Tauern National Park in the Austrian Alps." name="description"/>
+  <meta content="Study Area &mdash; Hohe Tauern National Park" property="og:title"/>
+  <meta content="Alpine study area: 1,856 km&sup2; of the highest and most glaciated part of the Austrian Alps." property="og:description"/>
+  <meta content="pics/study_area_map.png" property="og:image"/>
+  <meta content="pics/study_area_map.png" name="twitter:image"/>
+  <link href="pics/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="anonymous" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="css/styles.css" rel="stylesheet"/>
+ 
+<style id="study-area-visibility-fix">
+  /* Permanent Study Area map visibility fix */
+  .study-map-reveal,
+  .study-map-reveal figure,
+  .study-map-reveal figure button,
+  .study-map-reveal figure img {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  .study-map-reveal {
+    transform: none !important;
+    display: block !important;
+  }
+
+  .study-map-reveal figure img {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+</style>
+</head>
+ <body>
+  <div aria-hidden="true" style="position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg, var(--color-thesis-accent-glow), var(--color-thesis-accent), var(--color-thesis-aurora));z-index:60;box-shadow:0 0 12px rgba(125,227,240,0.6);transition:width 80ms linear">
+  </div>
+  <nav class="sticky top-0 z-40 border-b backdrop-blur-md" style="background-color:rgba(255,255,255,0.88);border-color:rgba(11,29,42,0.08);color:var(--color-thesis-ink)">
+   <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3">
+    <a class="font-display text-base tracking-tight" href="index.html">
+     <span style="color:var(--color-thesis-accent)">
+      ❄
+     </span>
+     <span class="opacity-90">
+      Hohe Tauern
+     </span>
+     <span class="opacity-50">
+      &middot; Snow Thesis
+     </span>
+    </a>
+    <div class="hidden flex-wrap justify-end gap-1 lg:flex">
+     <a class="rounded-full px-3 py-1.5 text-[10px] uppercase tracking-[0.2em] transition-opacity hover:opacity-100" href="introduction.html" style="opacity:0.75">
+      Introduction
+     </a>
+     <a class="rounded-full px-3 py-1.5 text-[10px] uppercase tracking-[0.2em] transition-opacity hover:opacity-100" href="objectives.html" style="opacity:0.75">
+      Objectives
+     </a>
+     <a class="rounded-full px-3 py-1.5 text-[10px] uppercase tracking-[0.2em] transition-opacity hover:opacity-100" href="state-of-art.html" style="opacity:0.75">
+      State of Art
+     </a>
+     <a aria-current="page" class="rounded-full px-3 py-1.5 text-[10px] uppercase tracking-[0.2em] transition-opacity hover:opacity-100" data-status="active" href="study-area.html" style="opacity:1;background-color:var(--color-thesis-accent);color:#fff">
+      Study Area
+     </a>
+     <a class="rounded-full px-3 py-1.5 text-[10px] uppercase tracking-[0.2em] transition-opacity hover:opacity-100" href="methodology.html" style="opacity:0.75">
+      Methodology
+     </a>
+     <a class="rounded-full px-3 py-1.5 text-[10px] uppercase tracking-[0.2em] transition-opacity hover:opacity-100" href="results.html" style="opacity:0.75">
+      Results
+     </a>
+     <a class="rounded-full px-3 py-1.5 text-[10px] uppercase tracking-[0.2em] transition-opacity hover:opacity-100" href="climate-drivers.html" style="opacity:0.75">
+      Climatic Drivers
+     </a>
+     <a class="rounded-full px-3 py-1.5 text-[10px] uppercase tracking-[0.2em] transition-opacity hover:opacity-100" href="year-compare.html" style="opacity:0.75">
+      Multi-Year Snow Variability Tool
+     </a>
+     <a class="rounded-full px-3 py-1.5 text-[10px] uppercase tracking-[0.2em] transition-opacity hover:opacity-100" href="discussion.html" style="opacity:0.75">
+      Discussion
+     </a>
+     <a class="rounded-full px-3 py-1.5 text-[10px] uppercase tracking-[0.2em] transition-opacity hover:opacity-100" href="conclusion.html" style="opacity:0.75">
+      Conclusion
+     </a>
+     <a class="rounded-full px-3 py-1.5 text-[10px] uppercase tracking-[0.2em] transition-opacity hover:opacity-100" href="gee-code.html" style="opacity:0.75">
+      GEE Code
+     </a>
+     <a class="rounded-full px-3 py-1.5 text-[10px] uppercase tracking-[0.2em] transition-opacity hover:opacity-100" href="references.html" style="opacity:0.75">
+      References
+     </a>
+    </div>
+    <details class="relative lg:hidden">
+     <summary class="cursor-pointer list-none rounded-md border px-3 py-1.5 text-[10px] uppercase tracking-[0.2em]" style="border-color:currentColor">
+      Menu
+     </summary>
+     <div class="absolute right-0 top-full z-50 mt-2 flex w-56 flex-col rounded-md border bg-white p-2 shadow-xl" style="color:var(--color-thesis-ink);border-color:rgba(11,29,42,0.1)">
+      <a class="rounded px-3 py-1.5 text-xs uppercase tracking-[0.2em] hover:bg-slate-100" href="introduction.html">
+       Introduction
+      </a>
+      <a class="rounded px-3 py-1.5 text-xs uppercase tracking-[0.2em] hover:bg-slate-100" href="objectives.html">
+       Objectives
+      </a>
+      <a class="rounded px-3 py-1.5 text-xs uppercase tracking-[0.2em] hover:bg-slate-100" href="state-of-art.html">
+       State of Art
+      </a>
+      <a aria-current="page" class="rounded px-3 py-1.5 text-xs uppercase tracking-[0.2em] hover:bg-slate-100 active" data-status="active" href="study-area.html">
+       Study Area
+      </a>
+      <a class="rounded px-3 py-1.5 text-xs uppercase tracking-[0.2em] hover:bg-slate-100" href="methodology.html">
+       Methodology
+      </a>
+      <a class="rounded px-3 py-1.5 text-xs uppercase tracking-[0.2em] hover:bg-slate-100" href="results.html">
+       Results
+      </a>
+      <a class="rounded px-3 py-1.5 text-xs uppercase tracking-[0.2em] hover:bg-slate-100" href="climate-drivers.html">
+       Climatic Drivers
+      </a>
+      <a class="rounded px-3 py-1.5 text-xs uppercase tracking-[0.2em] hover:bg-slate-100" href="year-compare.html">
+       Multi-Year Snow Variability Tool
+      </a>
+      <a class="rounded px-3 py-1.5 text-xs uppercase tracking-[0.2em] hover:bg-slate-100" href="discussion.html">
+       Discussion
+      </a>
+      <a class="rounded px-3 py-1.5 text-xs uppercase tracking-[0.2em] hover:bg-slate-100" href="conclusion.html">
+       Conclusion
+      </a>
+      <a class="rounded px-3 py-1.5 text-xs uppercase tracking-[0.2em] hover:bg-slate-100" href="gee-code.html">
+       GEE Code
+      </a>
+      <a class="rounded px-3 py-1.5 text-xs uppercase tracking-[0.2em] hover:bg-slate-100" href="references.html">
+       References
+      </a>
+     </div>
+    </details>
+   </div>
+  </nav>
+  <!--$-->
+  <div style="background-color:var(--color-thesis-light);color:var(--color-thesis-ink)">
+   <header class="thesis-aurora border-b" style="border-color:rgba(11,29,42,0.08);color:var(--color-thesis-ice)">
+    <div aria-hidden="true" class="thesis-snow">
+     <span class="thesis-snow-flake" style="left:0%;animation-delay:0s;animation-duration:9s;font-size:8px;opacity:0.35">
+      ❄
+     </span>
+     <span class="thesis-snow-flake" style="left:4.17%;animation-delay:-1.6s;animation-duration:10s;font-size:11px;opacity:0.5">
+      ❄
+     </span>
+     <span class="thesis-snow-flake" style="left:8.34%;animation-delay:-3.2s;animation-duration:11s;font-size:14px;opacity:0.6499999999999999">
+      ❄
+     </span>
+     <span class="thesis-snow-flake" style="left:12.51%;animation-delay:-4.800000000000001s;animation-duration:12s;font-size:17px;opacity:0.7999999999999999">
+      ❄
+     </span>
+     <span class="thesis-snow-flake" style="left:16.68%;animation-delay:-6.4s;animation-duration:13s;font-size:20px;opacity:0.35">
+      ❄
+     </span>
+     <span class="thesis-snow-flake" style="left:20.85%;animation-delay:-8s;animation-duration:14s;font-size:8px;opacity:0.5">
+      ❄
+     </span>
+     <span class="thesis-snow-flake" style="left:25.02%;animation-delay:-9.600000000000001s;animation-duration:9s;font-size:11px;opacity:0.6499999999999999">
+      ❄
+     </span>
+     <span class="thesis-snow-flake" style="left:29.189999999999998%;animation-delay:-11.200000000000001s;animation-duration:10s;font-size:14px;opacity:0.7999999999999999">
+      ❄
+     </span>
+     <span class="thesis-snow-flake" style="left:33.36%;animation-delay:0s;animation-duration:11s;font-size:17px;opacity:0.35">
+      ❄
+     </span>
+     <span class="thesis-snow-flake" style="left:37.53%;animation-delay:-1.6s;animation-duration:12s;font-size:20px;opacity:0.5">
+      ❄
+     </span>
+     <span class="thesis-snow-flake" style="left:41.7%;animation-delay:-3.2s;animation-duration:13s;font-size:8px;opacity:0.6499999999999999">
+      ❄
+     </span>
+     <span class="thesis-snow-flake" style="left:45.87%;animation-delay:-4.800000000000001s;animation-duration:14s;font-size:11px;opacity:0.7999999999999999">
+      ❄
+     </span>
+     <span class="thesis-snow-flake" style="left:50.04%;animation-delay:-6.4s;animation-duration:9s;font-size:14px;opacity:0.35">
+      ❄
+     </span>
+     <span class="thesis-snow-flake" style="left:54.21%;animation-delay:-8s;animation-duration:10s;font-size:17px;opacity:0.5">
+      ❄
+     </span>
+     <span class="thesis-snow-flake" style="left:58.379999999999995%;animation-delay:-9.600000000000001s;animation-duration:11s;font-size:20px;opacity:0.6499999999999999">
+      ❄
+     </span>
+     <span class="thesis-snow-flake" style="left:62.55%;animation-delay:-11.200000000000001s;animation-duration:12s;font-size:8px;opacity:0.7999999999999999">
+      ❄
+     </span>
+     <span class="thesis-snow-flake" style="left:66.72%;animation-delay:0s;animation-duration:13s;font-size:11px;opacity:0.35">
+      ❄
+     </span>
+     <span class="thesis-snow-flake" style="left:70.89%;animation-delay:-1.6s;animation-duration:14s;font-size:14px;opacity:0.5">
+      ❄
+     </span>
+     <span class="thesis-snow-flake" style="left:75.06%;animation-delay:-3.2s;animation-duration:9s;font-size:17px;opacity:0.6499999999999999">
+      ❄
+     </span>
+     <span class="thesis-snow-flake" style="left:79.23%;animation-delay:-4.800000000000001s;animation-duration:10s;font-size:20px;opacity:0.7999999999999999">
+      ❄
+     </span>
+     <span class="thesis-snow-flake" style="left:83.4%;animation-delay:-6.4s;animation-duration:11s;font-size:8px;opacity:0.35">
+      ❄
+     </span>
+     <span class="thesis-snow-flake" style="left:87.57%;animation-delay:-8s;animation-duration:12s;font-size:11px;opacity:0.5">
+      ❄
+     </span>
+     <span class="thesis-snow-flake" style="left:91.74%;animation-delay:-9.600000000000001s;animation-duration:13s;font-size:14px;opacity:0.6499999999999999">
+      ❄
+     </span>
+     <span class="thesis-snow-flake" style="left:95.91%;animation-delay:-11.200000000000001s;animation-duration:14s;font-size:17px;opacity:0.7999999999999999">
+      ❄
+     </span>
+    </div>
+    <div class="mx-auto max-w-3xl px-6 py-16 md:py-24">
+     <p class="text-xs uppercase tracking-[0.4em]" style="color:var(--color-thesis-accent-glow)">
+      Chapter
+      <!-- -->
+      04
+     </p>
+     <h1 class="font-display mt-4 text-4xl leading-[1.05] md:text-6xl">
+      Study Area &mdash; Hohe Tauern
+     </h1>
+     <p class="mt-6 max-w-2xl text-base opacity-85 md:text-lg">
+      1,856 km&sup2; of the highest and most glaciated part of the Eastern Alps &mdash; the largest national park in the Alps and an ideal natural laboratory for snow research.
+     </p>
+    </div>
+   </header>
+   <article class="mx-auto max-w-3xl px-6 py-16 md:py-20">
+    <div class="thesis-prose space-y-5 text-base leading-[1.75] md:text-lg">
+     <h2 class="font-display mt-12 mb-3 text-2xl md:text-3xl" style="color:var(--color-thesis-bg)">
+      Geographic Setting
+     </h2>
+     <p>
+      Hohe Tauern National Park is situated in the central part of the Eastern Alps in Austria, covering the federal states of Carinthia (K&auml;rnten), Salzburg, and Tyrol (Tirol). The area covered by the park is 1,856 km&sup2;, which makes it the largest national park in the Alps and one of the largest protected natural areas in Central Europe. The national park is distributed along and on both sides of the main Alpine ridge, encompassing the area from valley bottoms at approximately 700 m a.s.l. up to the peak of the Gro&szlig;glockner, the highest mountain in Austria, at 3,798 m a.s.l. The park's status as a protected area and the fact that most of it remains untouched by human activity make it a perfect site for studying natural snow cover.
+     </p>
+     <h2 class="font-display mt-12 mb-3 text-2xl md:text-3xl" style="color:var(--color-thesis-bg)">
+      Topography
+     </h2>
+     <p>
+      The topography of Hohe Tauern National Park is defined by its high and steep reliefs formed under the influence of Pleistocene glaciers. The territory of the national park covers one of the largest tectonic windows in the Alps &ndash; the Tauern Window, which includes a variety of metamorphic rocks of the Penninic nappe. Many peaks in the district rise to more than 3000 meters above sea level, and hundreds of glaciers cover the area. The digital topographic model used is a slope layer derived from the ALOS PALSAR 12.5 m resolution radar satellite. All data were projected to WGS84 / UTM Zone 33N for the Sentinel-1 and Sentinel-2 satellites used from 2018 to 2025.
+     </p>
+     <h2 class="font-display mt-12 mb-3 text-2xl md:text-3xl" style="color:var(--color-thesis-bg)">
+      Climate
+     </h2>
+     <p>
+      The climate of Hohe Tauern National Park varies from oceanic in the west and north to more continental in the inner-alpine east. It is strongly determined by altitude since annual mean temperatures are close to 0 &deg;C at the timberline (1800&ndash;2000 m a.s.l.). Annual precipitation amounts to 2000 mm or more in exposed western and northern mountain tops, with a significant part falling as snow in the form of heavy snowstorms in winter (October&ndash;May). Alpine snow cover in the region usually starts to form in October and is maximum in February&ndash;March, being gradually depleted in spring and summer. Snow depth and snow cover duration decreased significantly at low and mid-altitudes during the last decades (Sch&ouml;ner et al., 2009; Olefs et al., 2020). The melting of snow cover in high-altitude regions is one of the main sources of river runoff in Austria, particularly for the Salzach, Drau, and Inn catchments (Hanzer et al., 2018).
+     </p>
+     <h2 class="font-display mt-12 mb-3 text-2xl md:text-3xl" style="color:var(--color-thesis-bg)">
+      Elevation Zones
+     </h2>
+     <p>
+      Due to the strong dependence of snow accumulation, ablation, and snow state on altitude, the study area was stratified according to elevation using the ALOS PALSAR DEM into four elevation zones:
+     </p>
+     <ul class="list-disc space-y-2 pl-6">
+      <li>
+       Zone I (&lt;1,500 m): the lower valley and mountainous area with discontinuous and seasonal snow cover and a relatively short snow season;
+      </li>
+      <li>
+       Zone II (1,500&ndash;2,000 m): the lower sub-alpine area with a stable seasonal snowpack and a distinct spring snowmelt peak identified in both optical and SAR data;
+      </li>
+      <li>
+       Zone III (2,000&ndash;3,000 m): the alpine area with deep and prolonged snowpack dominating the snow cover extent during the cold season;
+      </li>
+      <li>
+       Zone IV (&gt;3,000 m): the high-alpine and glacierized area with a continuous and perennial snow cover and the largest challenge for optical remote sensing due to frequent cloudiness and low sun angles during winter.
+      </li>
+     </ul>
+     <div class="study-map-reveal" style="opacity:1 !important; transform:none !important; visibility:visible !important;">
+      <figure class="col-span-full my-8">
+       <button aria-label="Open zoomable preview" class="group relative block w-full cursor-zoom-in overflow-hidden rounded-lg border bg-white shadow-sm" style="border-color:rgba(11,29,42,0.12)" type="button">
+        <img alt="Figure 1. Location and topography of Hohe Tauern National Park: (a) location of Austria within Europe, (b) location of Hohe Tauern National Park within Austria, and (c) elevation, streams, and selected peaks within the national park." class="w-full object-contain transition-transform duration-500 group-hover:scale-[1.02]" decoding="async" fetchpriority="high" loading="eager" src="pics/study_area_map.png"/>
+        <span class="pointer-events-none absolute right-2 top-2 rounded-full bg-black/60 px-2 py-1 text-[10px] font-semibold uppercase tracking-wider text-white opacity-0 transition-opacity group-hover:opacity-100">
+         ⤢ Click to zoom
+        </span>
+       </button>
+       <figcaption class="mt-3 text-xs italic leading-relaxed" style="color:var(--color-thesis-muted)">
+        Figure 1. Location and topography of Hohe Tauern National Park: (a) location of Austria within Europe, (b) location of Hohe Tauern National Park within Austria, and (c) elevation, streams, and selected peaks within the national park.
+       </figcaption>
+      </figure>
+     </div>
+    </div>
+   </article>
+   <div class="mx-auto grid max-w-3xl grid-cols-1 gap-4 px-6 pb-16 sm:grid-cols-2">
+    <a class="group rounded-lg border p-5 transition-all hover:-translate-y-0.5 hover:shadow-md" href="state-of-art.html" style="border-color:rgba(11,29,42,0.12);background-color:#fff">
+     <span class="block text-[10px] uppercase tracking-[0.3em]" style="color:var(--color-thesis-muted)">
+      &larr; Previous
+      <!-- -->
+      &middot; 03
+     </span>
+     <span class="font-display mt-1 block text-lg" style="color:var(--color-thesis-bg)">
+      State of Art
+     </span>
+    </a>
+    <a class="group rounded-lg border p-5 text-right transition-all hover:-translate-y-0.5 hover:shadow-md" href="methodology.html" style="border-color:rgba(11,29,42,0.12);background-color:#fff">
+     <span class="block text-[10px] uppercase tracking-[0.3em]" style="color:var(--color-thesis-muted)">
+      Next
+      <!-- -->
+      &middot; 05
+      <!-- -->
+      &rarr;
+     </span>
+     <span class="font-display mt-1 block text-lg" style="color:var(--color-thesis-bg)">
+      Methodology
+     </span>
+    </a>
+   </div>
+   <footer class="px-6 py-12 text-center text-xs uppercase tracking-[0.25em]" style="background-color:var(--color-thesis-bg);color:var(--color-thesis-ice)">
+    <div class="mx-auto mb-8 flex max-w-4xl flex-wrap items-center justify-center gap-6 rounded-md border px-6 py-4 sm:gap-10" style="background-color:var(--color-thesis-bg);border-color:var(--color-thesis-line)">
+     <img alt="Palack&yacute; University Olomouc" class="h-10 w-auto object-contain sm:h-12" loading="lazy" src="pics/palacky_white.jpeg"/>
+     <img alt="Paris Lodron University Salzburg" class="h-10 w-auto object-contain sm:h-12" loading="lazy" src="pics/plus_logo.jpeg"/>
+     <img alt="Copernicus Master in Digital Earth" class="h-10 w-auto object-contain sm:h-12" loading="lazy" src="pics/copernicus_white.jpeg"/>
+     <img alt="Co-funded by the European Union" class="h-10 w-auto object-contain sm:h-12" loading="lazy" src="pics/eu_logo.jpeg"/>
+    </div>
+    <p>
+     &copy; 2026 Syeda Noor ul Saba Bukhari &mdash; All rights reserved
+    </p>
+    <p class="mt-2 opacity-70">
+     Erasmus Mundus Joint Master Degree &middot; Copernicus Master in Digital Earth
+    </p>
+    <p class="mt-2 opacity-70">
+     Palack&yacute; University Olomouc &amp; Paris Lodron University Salzburg
+    </p>
+   </footer>
+  </div>
+  <!--/$-->
+  <script src="js/reveal.js">
+  </script>
+  <script>
+   document.addEventListener("DOMContentLoaded", function () {
+  // Always make the study-area map visible.
+  document.querySelectorAll(".study-map-reveal").forEach(function (el) {
+    el.style.opacity = "1";
+    el.style.transform = "none";
+  });
+
+  const mapButton = document.querySelector(".study-map-reveal figure button");
+  const mapImage = document.querySelector('.study-map-reveal img[src="pics/study_area_map.png"]');
+
+  if (!mapButton || !mapImage) return;
+
+  // Create an accessible full-screen zoom viewer.
+  const modal = document.createElement("div");
+  modal.id = "studyMapModal";
+  modal.setAttribute("aria-hidden", "true");
+  modal.innerHTML = `
+    <div class="study-map-modal-backdrop" data-close-map></div>
+    <div class="study-map-modal-content" role="dialog" aria-modal="true"
+         aria-label="Study area map enlarged view">
+      <button type="button" class="study-map-close" aria-label="Close enlarged map"
+              data-close-map>&times;</button>
+      <img src="${mapImage.src}" alt="${mapImage.alt}">
+    </div>
+  `;
+  document.body.appendChild(modal);
+
+  const style = document.createElement("style");
+  style.textContent = `
+    .study-map-reveal {
+      opacity: 1 !important;
+      transform: none !important;
+      visibility: visible !important;
+    }
+
+    .study-map-modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,.82);
+    }
+
+    #studyMapModal {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    #studyMapModal.is-open {
+      display: flex;
+    }
+
+    .study-map-modal-content {
+      position: relative;
+      width: min(96vw, 1500px);
+      height: min(94vh, 1000px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+    }
+
+    .study-map-modal-content img {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 10px 40px rgba(0,0,0,.45);
+    }
+
+    .study-map-close {
+      position: absolute;
+      top: -8px;
+      right: -8px;
+      z-index: 2;
+      width: 42px;
+      height: 42px;
+      border: 0;
+      border-radius: 50%;
+      background: rgba(0,0,0,.75);
+      color: white;
+      font-size: 30px;
+      line-height: 1;
+      cursor: pointer;
+    }
+
+    .study-map-close:hover {
+      background: rgba(0,0,0,.9);
+    }
+
+    body.study-map-modal-open {
+      overflow: hidden;
+    }
+  `;
+  document.head.appendChild(style);
+
+  function openMap() {
+    modal.classList.add("is-open");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.classList.add("study-map-modal-open");
+  }
+
+  function closeMap() {
+    modal.classList.remove("is-open");
+    modal.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("study-map-modal-open");
+  }
+
+  mapButton.addEventListener("click", openMap);
+
+  modal.querySelectorAll("[data-close-map]").forEach(function (el) {
+    el.addEventListener("click", closeMap);
+  });
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") closeMap();
+  });
+});
+  </script>
+ 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".study-map-reveal").forEach(function (el) {
+    el.style.setProperty("opacity", "1", "important");
+    el.style.setProperty("transform", "none", "important");
+    el.style.setProperty("visibility", "visible", "important");
+  });
+});
+</script>
+</body>
+</html>
